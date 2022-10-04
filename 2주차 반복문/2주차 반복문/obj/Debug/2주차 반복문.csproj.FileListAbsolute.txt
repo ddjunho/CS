@@ -1,0 +1,19 @@
+D:\c# a권준오\2주차 반복문\2주차 반복문\bin\Debug\2주차 반복문.exe.config
+D:\c# a권준오\2주차 반복문\2주차 반복문\bin\Debug\2주차 반복문.exe
+D:\c# a권준오\2주차 반복문\2주차 반복문\bin\Debug\2주차 반복문.pdb
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\2주차 반복문.csproj.AssemblyReference.cache
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form1.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Properties.Resources.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\2주차 반복문.csproj.GenerateResource.cache
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\2주차 반복문.csproj.CoreCompileInputs.cache
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\2주차 반복문.exe
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\2주차 반복문.pdb
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form2.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form3.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form4.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form5.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form6.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form7.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form8.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form9.resources
+D:\c# a권준오\2주차 반복문\2주차 반복문\obj\Debug\_2주차_반복문.Form10.resources
