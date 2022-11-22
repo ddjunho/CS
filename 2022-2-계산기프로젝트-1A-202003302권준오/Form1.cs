@@ -262,5 +262,159 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             sOperation_Stored = "";
         Exit:;
         }
+
+        private void button20_Click(object sender, EventArgs e)
+        { //1/x
+            if (textBox1.Text != "")
+            {
+            textBox1.Text = (1 / double.Parse(textBox1.Text)).ToString();
+            bJjeom_Flag = false;
+            bClear_Flag = true;
+            dSutja_Stored = 0;
+            sOperation_Stored = "";
+            }
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {//x^
+            if (textBox1.Text != "")
+            {
+                //double x = double.Parse(textBox1.Text);
+                //textBox1.Text = (x*x).ToString();
+                textBox1.Text = Math.Pow(double.Parse(textBox1.Text),2).ToString();
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+            }
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {//+/-
+            /*if (textBox1.Text != "")
+            {
+                if (double.Parse(textBox1.Text) == 0)
+                    textBox1.Text = textBox1.Text;
+                else if (double.Parse(textBox1.Text)>0)
+                    textBox1.Text = "-"+ textBox1.Text;
+                else if (double.Parse(textBox1.Text) < 0)
+                    textBox1.Text = textBox1.Text.Substring(1, textBox1.TextLength -1);
+            }*/
+
+            textBox1.Text = (-(double.Parse(textBox1.Text))).ToString();
+            
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {//n1
+
+        }
+
+        private void 공학계산기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            groupBox1.Show();
+            this.Text = "공학 계산기";
+            this.Width = 765;
+            this.Height = 430;
+            textBox1.Width = 725;
+            일반계산기ToolStripMenuItem.Checked = false;
+            공학계산기ToolStripMenuItem.Checked = true;
+            label1.Text = "This Calculator is maded by K.J.O in Dept. Software Engineering of Seoil University!";
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            groupBox1.Hide();
+            this.Text = "일반 계산기";
+            this.Width = 520;
+            this.Height = 430;
+            textBox1.Width = 480;
+            일반계산기ToolStripMenuItem.Checked = true;
+            공학계산기ToolStripMenuItem.Checked = false;
+
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+             
+        }
+
+        private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 일반계산기ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            groupBox1.Hide();
+            this.Text = "일반 계산기";
+            this.Width = 520;
+            this.Height = 430;
+            textBox1.Width = 480;
+            일반계산기ToolStripMenuItem.Checked = true;
+            공학계산기ToolStripMenuItem.Checked = false;
+            label1.Text = "By K.J.O in Dept. Software Engineering of Seoil University!";
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {//x^3
+
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {//\x\
+
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {//sin
+
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {//x^y
+            
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {//1/\x\
+
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {//cos
+
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {//10^x
+
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {//파이
+
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {// tan
+
+        }
+
+        private void button33_Click(object sender, EventArgs e)
+        {//mod
+
+        }
+
+        private void button32_Click(object sender, EventArgs e)
+        {//root
+
+        }
     }
 }
