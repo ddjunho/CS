@@ -117,11 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="NISI20220812_0001062419_web" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NISI20220812_0001062419_web.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="권준오 반명함" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\권준오 반명함.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>1. 본 계산기는 MS계산기와는 달리 처음에 0이 표시되지 않습니다.
+
+2. '0.'을 입력하려면 '.'만 입력해도 자동으로 0으로 표시됩니다.
+
+3. '←'버튼으로 삭제시에 '0.'에서 '.'을 삭제하면 '0'도 자동으로 삭제됩니다.
+
+4.'mod'버튼은 나머지를 구하는 연산 버튼입니다.
+
+5. 'π'버튼은 원주율을 실수로 표시합니다.
+
+6. 공학용 계산기는 파일 -&gt; 공학용 계산기를 클릭하시면 사용할수 있습니다.
+
+7. 문의사항은 'zoono9931@gmail.com'으로 문의하시기를 바랍니다.</value>
   </data>
 </root>

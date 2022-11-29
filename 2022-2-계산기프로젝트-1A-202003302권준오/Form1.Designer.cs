@@ -530,26 +530,26 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             // 일반계산기ToolStripMenuItem
             // 
             this.일반계산기ToolStripMenuItem.Name = "일반계산기ToolStripMenuItem";
-            this.일반계산기ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.일반계산기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.일반계산기ToolStripMenuItem.Text = "일반계산기";
             this.일반계산기ToolStripMenuItem.Click += new System.EventHandler(this.일반계산기ToolStripMenuItem_Click);
             // 
             // 공학계산기ToolStripMenuItem
             // 
             this.공학계산기ToolStripMenuItem.Name = "공학계산기ToolStripMenuItem";
-            this.공학계산기ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.공학계산기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.공학계산기ToolStripMenuItem.Text = "공학계산기";
             this.공학계산기ToolStripMenuItem.Click += new System.EventHandler(this.공학계산기ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(131, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.종료ToolStripMenuItem.Text = "종료";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
@@ -568,18 +568,21 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             this.개발자소개ToolStripMenuItem.Name = "개발자소개ToolStripMenuItem";
             this.개발자소개ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.개발자소개ToolStripMenuItem.Text = "개발자 소개";
+            this.개발자소개ToolStripMenuItem.Click += new System.EventHandler(this.개발자소개ToolStripMenuItem_Click);
             // 
             // 교수님에게하고픈말ToolStripMenuItem
             // 
             this.교수님에게하고픈말ToolStripMenuItem.Name = "교수님에게하고픈말ToolStripMenuItem";
             this.교수님에게하고픈말ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.교수님에게하고픈말ToolStripMenuItem.Text = "교수님에게 하고픈 말";
+            this.교수님에게하고픈말ToolStripMenuItem.Click += new System.EventHandler(this.교수님에게하고픈말ToolStripMenuItem_Click);
             // 
             // 계산기사용법ToolStripMenuItem
             // 
             this.계산기사용법ToolStripMenuItem.Name = "계산기사용법ToolStripMenuItem";
             this.계산기사용법ToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.계산기사용법ToolStripMenuItem.Text = "계산기 사용법";
+            this.계산기사용법ToolStripMenuItem.Click += new System.EventHandler(this.계산기사용법ToolStripMenuItem_Click);
             // 
             // 도움ToolStripMenuItem
             // 
@@ -593,8 +596,9 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             // 개발환경ToolStripMenuItem
             // 
             this.개발환경ToolStripMenuItem.Name = "개발환경ToolStripMenuItem";
-            this.개발환경ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.개발환경ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.개발환경ToolStripMenuItem.Text = "개발 환경";
+            this.개발환경ToolStripMenuItem.Click += new System.EventHandler(this.개발환경ToolStripMenuItem_Click);
             // 
             // 버전정보ToolStripMenuItem
             // 
@@ -631,6 +635,7 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             this.groupBox1.Controls.Add(this.button27);
             this.groupBox1.Controls.Add(this.button28);
             this.groupBox1.Controls.Add(this.button33);
+            this.groupBox1.ForeColor = System.Drawing.Color.Crimson;
             this.groupBox1.Location = new System.Drawing.Point(498, 88);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(239, 273);

@@ -180,6 +180,10 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
                 textBox1.Text = (dSutja_Stored * double.Parse(textBox1.Text)).ToString();
             if (sOperation_Stored == "/")
                 textBox1.Text = (dSutja_Stored / double.Parse(textBox1.Text)).ToString();
+            if (sOperation_Stored == "^")
+                textBox1.Text = Math.Pow(dSutja_Stored, double.Parse(textBox1.Text)).ToString();
+            if (sOperation_Stored == "%")
+                textBox1.Text = (dSutja_Stored % double.Parse(textBox1.Text)).ToString();
         }
 
         private void button15_Click(object sender, EventArgs e)
@@ -304,10 +308,31 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             textBox1.Text = (-(double.Parse(textBox1.Text))).ToString();
             
         }
-
+        public double Factorial(double n)
+        {//재귀함수:Recursive
+            if (n == 1)
+                return 1;
+            else
+                return Factorial(n - 1) * n;
+        }
         private void button31_Click(object sender, EventArgs e)
-        {//n1
-
+        {//n!
+            if (textBox1.Text != "")
+            {
+                double dFac, dSum = 1;
+                dFac = double.Parse(textBox1.Text);
+                /*for (int i = 1; i <= dFac; i++)
+                    dSum = dSum * i;*/
+                /*for (double i = dFac; i >= 1; i--)
+                    dSum = dSum * i;
+                textBox1.Text = dSum.ToString();*/
+                textBox1.Text = Factorial(double.Parse(textBox1.Text)).ToString();
+                
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+            }
         }
 
         private void 공학계산기ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -347,7 +372,7 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
 
         private void 종료ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Dispose();
         }
 
         private void 일반계산기ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -364,56 +389,180 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
 
         private void button30_Click(object sender, EventArgs e)
         {//x^3
-
+            if (textBox1.Text != "")
+            {
+                //double x = double.Parse(textBox1.Text);
+                //textBox1.Text = (x*x).ToString();
+                textBox1.Text = Math.Pow(double.Parse(textBox1.Text), 3).ToString();
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+            }
         }
 
         private void button29_Click(object sender, EventArgs e)
         {//\x\
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = Math.Abs(double.Parse(textBox1.Text)).ToString();
 
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+
+            }
         }
 
         private void button28_Click(object sender, EventArgs e)
         {//sin
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = Math.Sin(double.Parse(textBox1.Text)*Math.PI/180).ToString(); 
+                
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
 
+            }
         }
 
         private void button27_Click(object sender, EventArgs e)
         {//x^y
-            
+            if (textBox1.Text == "")
+            {
+                goto Exit;
+            }
+            if (sOperation_Stored != "")
+            {
+                Operation();
+            }
+            dSutja_Stored = double.Parse(textBox1.Text);
+            sOperation_Stored = "^";
+            bJjeom_Flag = false;
+            bClear_Flag = true;
+        Exit:;
         }
 
         private void button23_Click(object sender, EventArgs e)
         {//1/\x\
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = (1/Math.Abs(double.Parse(textBox1.Text))).ToString();
 
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+
+            }
         }
 
         private void button26_Click(object sender, EventArgs e)
         {//cos
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = Math.Cos(double.Parse(textBox1.Text) * Math.PI / 180).ToString();
 
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+
+            }
         }
 
         private void button25_Click(object sender, EventArgs e)
         {//10^x
-
+            if (textBox1.Text != "")
+            {
+                //double x = double.Parse(textBox1.Text);
+                //textBox1.Text = (x*x).ToString();
+                textBox1.Text = Math.Pow(10, double.Parse(textBox1.Text)).ToString();
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+            }
         }
 
         private void button24_Click(object sender, EventArgs e)
         {//파이
-
+            textBox1.Text = Math.PI.ToString();
+            bJjeom_Flag = false;
+            bClear_Flag = true;
         }
 
         private void button34_Click(object sender, EventArgs e)
         {// tan
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = Math.Tan(double.Parse(textBox1.Text) * Math.PI / 180).ToString();
 
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+
+            }
         }
 
         private void button33_Click(object sender, EventArgs e)
         {//mod
+            if (textBox1.Text != "")
+            {
+                if (sOperation_Stored != "")
+                {
+                    Operation();
+                }
+                dSutja_Stored = double.Parse(textBox1.Text);
+                sOperation_Stored = "%";
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+            }
 
         }
 
         private void button32_Click(object sender, EventArgs e)
         {//root
+            if (textBox1.Text != "")
+            {
+                textBox1.Text = Math.Sqrt(double.Parse(textBox1.Text)).ToString();
+                bJjeom_Flag = false;
+                bClear_Flag = true;
+                dSutja_Stored = 0;
+                sOperation_Stored = "";
+            }
+        }
+        private Form2 Developer_intro;
+        private void 개발자소개ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Developer_intro = new Form2();
+            Developer_intro.Owner = this;
+            Developer_intro.Show();
+            this.Hide();
+        }
+        private Form3 To_professor;
+        private void 교수님에게하고픈말ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            To_professor = new Form3();
+            To_professor.Owner = this;
+            To_professor.Show();
+            this.Hide();
+        }
+        private Form4 get_Help;
+        private void 계산기사용법ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            get_Help = new Form4();
+            get_Help.Owner = this;
+            get_Help.Show();
+            this.Hide();
+        }
+
+        private void 개발환경ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
 
         }
     }
