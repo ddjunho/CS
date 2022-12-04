@@ -560,10 +560,21 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             get_Help.Show();
             this.Hide();
         }
-
+        private Form5 IDE_Tool;
         private void 개발환경ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            IDE_Tool = new Form5();
+            IDE_Tool.Owner = this;
+            IDE_Tool.Show();
+            this.Hide();
+        }
+        private Form6 Calculator_version;
+        private void 버전정보ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Calculator_version = new Form6();
+            Calculator_version.Owner = this;
+            Calculator_version.Show();
+            this.Hide();
         }
     }
 }

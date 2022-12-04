@@ -530,26 +530,26 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             // 일반계산기ToolStripMenuItem
             // 
             this.일반계산기ToolStripMenuItem.Name = "일반계산기ToolStripMenuItem";
-            this.일반계산기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.일반계산기ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.일반계산기ToolStripMenuItem.Text = "일반계산기";
             this.일반계산기ToolStripMenuItem.Click += new System.EventHandler(this.일반계산기ToolStripMenuItem_Click);
             // 
             // 공학계산기ToolStripMenuItem
             // 
             this.공학계산기ToolStripMenuItem.Name = "공학계산기ToolStripMenuItem";
-            this.공학계산기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.공학계산기ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.공학계산기ToolStripMenuItem.Text = "공학계산기";
             this.공학계산기ToolStripMenuItem.Click += new System.EventHandler(this.공학계산기ToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(131, 6);
             // 
             // 종료ToolStripMenuItem
             // 
             this.종료ToolStripMenuItem.Name = "종료ToolStripMenuItem";
-            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.종료ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.종료ToolStripMenuItem.Text = "종료";
             this.종료ToolStripMenuItem.Click += new System.EventHandler(this.종료ToolStripMenuItem_Click);
             // 
@@ -603,8 +603,9 @@ namespace _2022_2_계산기프로젝트_1A_202003302권준오
             // 버전정보ToolStripMenuItem
             // 
             this.버전정보ToolStripMenuItem.Name = "버전정보ToolStripMenuItem";
-            this.버전정보ToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.버전정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.버전정보ToolStripMenuItem.Text = "버전 정보";
+            this.버전정보ToolStripMenuItem.Click += new System.EventHandler(this.버전정보ToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
