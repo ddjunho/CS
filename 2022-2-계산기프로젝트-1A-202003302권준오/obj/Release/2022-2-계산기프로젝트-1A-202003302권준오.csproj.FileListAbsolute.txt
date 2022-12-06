@@ -1,0 +1,13 @@
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\bin\Release\2022-2-계산기프로젝트-1A-202003302권준오.exe.config
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\bin\Release\2022-2-계산기프로젝트-1A-202003302권준오.exe
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\bin\Release\2022-2-계산기프로젝트-1A-202003302권준오.pdb
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\2022-2-계산기프로젝트-1A-202003302권준오.csproj.AssemblyReference.cache
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\_2022_2_계산기프로젝트_1A_202003302권준오.Form1.resources
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\_2022_2_계산기프로젝트_1A_202003302권준오.Form2.resources
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\_2022_2_계산기프로젝트_1A_202003302권준오.Form3.resources
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\_2022_2_계산기프로젝트_1A_202003302권준오.Form4.resources
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\_2022_2_계산기프로젝트_1A_202003302권준오.Properties.Resources.resources
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\2022-2-계산기프로젝트-1A-202003302권준오.csproj.GenerateResource.cache
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\2022-2-계산기프로젝트-1A-202003302권준오.csproj.CoreCompileInputs.cache
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\2022-2-계산기프로젝트-1A-202003302권준오.exe
+C:\Users\seoil\Desktop\2022-2-계산기프로젝트-1A-202003302권준오\obj\Release\2022-2-계산기프로젝트-1A-202003302권준오.pdb
