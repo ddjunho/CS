@@ -2,7 +2,7 @@
 using namespace std;
 class Animal {
 public:
-	void speak() {
+	virtual void speak() {
 		cout<<"목소리\n";
 	}
 };
@@ -10,6 +10,9 @@ class Dog : public Animal{
 public:
 	void speak() {
 		cout << "개목소리\n";
+	}
+	void aa() {
+		cout << "개목소리 aa\n";
 	}
 };
 class Cat : public Animal
@@ -27,5 +30,11 @@ int main() {
 	d1->Animal::speak();
 	delete d1;*/
 	Animal* pa = new Dog();
+	/*pa->speak();*/
+	/*Dog* pd = (Dog*)pa;*/
+	Dog* pd =(Dog*)pa; 
+	pd-> speak();
 	pa->speak();
+	delete pa;
+	delete pd;
 }
