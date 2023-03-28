@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class RemoteControl {
+public:
+	virtual void turnOn() {}
+	virtual void turnOff() {}
+};
+class Tv :public RemoteControl
+{
+public:
+	void turnOn() {
+		cout << "TV ON";
+	}
+	void turnOff() {
+		cout << "TV Off";
+	}
+
+};
+class radio:public RemoteControl
+{
+public:
+	void turnOn() {
+		cout << "radio ON";
+	}
+	void turnOff() {
+		cout << "radio Off";
+	}
+
+};
+
+int main() {
+	RemoteControl*r1 = new Tv();
+	RemoteControl* r3 = new radio();
+	Tv* r2 = (Tv*)r1;
+	radio* r4 = (radio*)r3;
+	r1->turnOn();
+	r2->turnOff();
+	delete r1;
+	delete r3;
+	return 0;
+}
