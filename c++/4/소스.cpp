@@ -3,20 +3,20 @@ using namespace std;
 class Animal {
 public:
 	void speak() {
-		cout<<"格家府\n";
+		cout<<"氇╈唽毽琝n";
 	}
 };
 class Dog : public Animal{
 public:
 	void speak() {
-		cout << "俺格家府\n";
+		cout << "臧滊靻岆Μ\n";
 	}
 };
 class Cat : public Animal
 {
 public:
 	void speak() {
-		cout << "成格家府\n";
+		cout << "雰ル靻岆Μ\n";
 	}
 };
 int main() {
