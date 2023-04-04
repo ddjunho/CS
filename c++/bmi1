@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+class  BMI {
+public:
+	double get_bmi(int kg, double m) { return kg / (m/100 *m/100); };
+};
+
+void main() {
+	double kg, m;
+	BMI a;
+	cout << "체중 :";
+	cin  >> kg;
+	cout << "키 :";
+	cin >> m;
+	cout << "BMI :" << a.get_bmi(kg, m);;
+	
+}	
