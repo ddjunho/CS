@@ -1,0 +1,72 @@
+#include <iostream>
+using namespace std;
+class  Scale
+{
+public:
+	int weight;
+	double height;
+	double bmi;
+	Scale() { cout << "체중계 시작합니다.\n"; }
+	~Scale() { cout << "체중계 종료합니다."; }
+	void init_bmi() {
+		set_w();
+		set_h();
+		getbmi();
+	 }
+	 void set_w() {
+		 cout << "체중 : ";
+		 cin >> weight;
+
+	 }
+	 void set_h() {
+		 cout << "키 : ";
+		 cin >> height;
+	 }
+	 void getbmi() {
+		 bmi = weight / ((height/100) * (height/100));
+		 cout << "BMI수치는 " << bmi << "입니다.\n";
+	 }
+	 void getbmi2() {
+		 bmi = weight / ((height / 100) * (height / 100));
+	 }
+};
+class Re_ : public Scale{
+public:
+	double fat_percentage;
+	double Re;
+	void init_Re() {
+		set_Re();
+		getRe();
+	}
+	void set_Re() {
+		cout << "체지방량 : ";
+		cin >> Re;
+	}
+	void getRe() {
+		fat_percentage = Re / weight * 100;
+		cout << "체지방률은 " << fat_percentage << "입니다.\n";
+	}
+};
+class Factor : public Scale{
+	double value;
+public:
+	void view() {
+		value = getbmi2();
+		if (value < 18.5)
+			cout << "저체중임";
+
+		else if (value >= 22.9) {
+			cout << "비만임";
+		}
+		else
+		{
+			cout << "정상체중임";
+		}
+	}
+};
+void main() {
+	Factor s1;
+	s1.init_bmi();
+	s1.view();
+}
+	
