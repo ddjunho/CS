@@ -25,9 +25,9 @@ public:
 
 	void showMenu() {
 		for (auto it = menuItems.begin(); it != menuItems.end(); it++) {
-			cout << "À½·á : "<< it->name << endl;
-			cout << "°¡°Ý : " << it->price << "¿ø" << endl;
-			cout << "Àç°í : " << it->stock << "°³" << endl;
+			cout << "ìŒë£Œ : "<< it->name << endl;
+			cout << "ê°€ê²© : " << it->price << "ì›" << endl;
+			cout << "ìž¬ê³  : " << it->stock << "ê°œ" << endl;
 			cout << endl;
 		}
 	}
@@ -41,19 +41,19 @@ public:
 				int totalPrice = selectedMenu.price * quantity;
 				totalSales += totalPrice;
 
-				cout << "¼±ÅÃÇÑ ¸Þ´º : " << selectedMenu.name << endl;
-				cout << "°¡°Ý : " << selectedMenu.price << "¿ø" << endl;
-				cout << "¼ö·® : " << quantity << "°³" << endl;
-				cout << "ÆÇ¸Å ¿Ï·á" << endl;
+				cout << "ì„ íƒí•œ ë©”ë‰´ : " << selectedMenu.name << endl;
+				cout << "ê°€ê²© : " << selectedMenu.price << "ì›" << endl;
+				cout << "ìˆ˜ëŸ‰ : " << quantity << "ê°œ" << endl;
+				cout << "íŒë§¤ ì™„ë£Œ" << endl;
 				cout << endl;
 			}
 			else {
-				cout << "Àç°í°¡ ºÎÁ·ÇÕ´Ï´Ù." << endl;
+				cout << "ìž¬ê³ ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤." << endl;
 				cout << endl;
 			}
 		}
 		else {
-			cout << "À¯È¿ÇÏÁö ¾ÊÀº ¸Þ´º ¼±ÅÃÀÔ´Ï´Ù." << endl;
+			cout << "ìœ íš¨í•˜ì§€ ì•Šì€ ë©”ë‰´ ì„ íƒìž…ë‹ˆë‹¤." << endl;
 			cout << endl;
 		}
 	}
@@ -63,40 +63,40 @@ public:
 	}
 
 	void BuyCount() {
-		cout << "±¸¸ÅÇÑ Ç°¸ñ °³¼ö" << endl;
+		cout << "êµ¬ë§¤í•œ í’ˆëª© ê°œìˆ˜" << endl;
 		for (const MenuItem& menuItem : menuItems) {
-			cout << menuItem.name << ": " << menuItem.quantitySold << "°³" << endl;
+			cout << menuItem.name << ": " << menuItem.quantitySold << "ê°œ" << endl;
 		}
 	}
 };
 
 int main() {
 	Machine m1;
-	m1.addMenu("ÄÝ¶ó", 1500, 5);
-	m1.addMenu("»çÀÌ´Ù", 2000, 3);
-	m1.addMenu("¼ÖÀÇ ´«", 2500, 2);
+	m1.addMenu("ì½œë¼", 1500, 5);
+	m1.addMenu("ì‚¬ì´ë‹¤", 2000, 3);
+	m1.addMenu("ì†”ì˜ ëˆˆ", 2500, 2);
 
 	while (true) {
-		cout << "ÀÚÆÇ±â ¸Þ´º" << endl;
+		cout << "ìžíŒê¸° ë©”ë‰´" << endl;
 		m1.showMenu();
 
-		cout << "À½·á¸¦ ¼±ÅÃÇÏ¼¼¿ä (0À» ÀÔ·ÂÇÏ¸é Á¾·á): ";
+		cout << "ìŒë£Œë¥¼ ì„ íƒí•˜ì„¸ìš” (0ì„ ìž…ë ¥í•˜ë©´ ì¢…ë£Œ): ";
 		int choice;
 		cin >> choice;
 
 		if (choice == 0) {
-			cout << "±¸¸Å¸¦ Á¾·áÇÕ´Ï´Ù." << endl;
+			cout << "êµ¬ë§¤ë¥¼ ì¢…ë£Œí•©ë‹ˆë‹¤." << endl;
 			break;
 		}
 
-		cout << "±¸¸ÅÇÒ °³¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ";
+		cout << "êµ¬ë§¤í•  ê°œìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ";
 		int quantity;
 		cin >> quantity;
 
 		m1.sellMenu(choice, quantity);
 	}
 
-	cout << "ÃÑ ±¸¸Å¾× : " << m1.getTotalSales() << "¿ø" << endl;
+	cout << "ì´ êµ¬ë§¤ì•¡ : " << m1.getTotalSales() << "ì›" << endl;
 	m1.BuyCount();
 
 	return 0;
